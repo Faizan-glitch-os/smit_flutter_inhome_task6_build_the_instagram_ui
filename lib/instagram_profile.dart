@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class InstagramStories extends StatelessWidget {
-  const InstagramStories(
+class InstagramProfile extends StatelessWidget {
+  const InstagramProfile(
       {super.key,
       required this.imagePath,
       required this.name,
@@ -15,12 +15,12 @@ class InstagramStories extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return Row(
       children: [
         Container(
           height: height,
           padding: EdgeInsets.all(padding),
-          margin: EdgeInsets.only(left: 10, right: 10, top: 5, bottom: 5),
+          margin: EdgeInsets.only(left: 20, right: 10, top: 5, bottom: 5),
           decoration: BoxDecoration(
             gradient: LinearGradient(colors: [
               Color.fromRGBO(181, 56, 155, 1),
