@@ -20,8 +20,8 @@ class InstagramStories extends StatelessWidget {
         Container(
           height: height,
           padding: EdgeInsets.all(padding),
-          margin: EdgeInsets.only(left: 10, right: 10, top: 5, bottom: 5),
-          decoration: BoxDecoration(
+          margin: const EdgeInsets.only(left: 10, right: 10, top: 5),
+          decoration: const BoxDecoration(
             gradient: LinearGradient(colors: [
               Color.fromRGBO(181, 56, 155, 1),
               Color.fromRGBO(245, 182, 121, 1)

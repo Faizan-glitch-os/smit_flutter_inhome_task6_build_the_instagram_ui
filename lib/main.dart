@@ -5,7 +5,7 @@ import 'package:task6_build_the_instagram_ui/instagram_profile.dart';
 
 import 'package:task6_build_the_instagram_ui/instagram_stories.dart';
 
-void main() => runApp(MaterialApp(home: Task6()));
+void main() => runApp(const MaterialApp(home: Task6()));
 
 class Task6 extends StatelessWidget {
   const Task6({super.key});
@@ -14,19 +14,21 @@ class Task6 extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        backgroundColor: const Color.fromRGBO(240, 240, 240, 1),
         appBar: AppBar(
-          title: Center(
+          backgroundColor: const Color.fromRGBO(240, 240, 240, 1),
+          title: const Center(
             child: Text(
               'Instagram',
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
             ),
           ),
-          leading: Icon(Icons.photo_camera_outlined),
+          leading: const Icon(Icons.photo_camera_outlined),
           actions: [
             Container(
-              margin: EdgeInsets.only(right: 10),
+              margin: const EdgeInsets.only(right: 10),
               transform: Matrix4.rotationZ(12),
-              child: Icon(Icons.send_outlined),
+              child: const Icon(Icons.send_outlined),
             ),
           ],
         ),
@@ -37,17 +39,18 @@ class Task6 extends StatelessWidget {
                 scrollDirection: Axis.vertical,
                 children: [
                   Container(
-                    margin: EdgeInsets.only(left: 20, right: 20, bottom: 10),
+                    margin:
+                        const EdgeInsets.only(left: 20, right: 20, bottom: 10),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text(
+                        const Text(
                           'Stories',
                           style: TextStyle(
                               fontSize: 20, fontWeight: FontWeight.bold),
                         ),
                         Container(
-                          child: Row(
+                          child: const Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
                               Icon(
@@ -70,36 +73,36 @@ class Task6 extends StatelessWidget {
                     child: ListView(
                       scrollDirection: Axis.horizontal,
                       children: [
-                        InstagramStories(
+                        const InstagramStories(
                           height: 80,
                           padding: 3,
                           imagePath: 'assets/images/Faizan_Ahmad.png',
                           name: 'Faizan Ahmad',
                         ),
-                        InstagramStories(
+                        const InstagramStories(
                           height: 80,
                           padding: 3,
                           imagePath: 'assets/images/Aizaz_Khan1.png',
                           name: 'Aizaz Khan',
                         ),
-                        InstagramStories(
+                        const InstagramStories(
                           height: 80,
                           padding: 3,
                           imagePath: 'assets/images/Farooq_Hameed.png',
                           name: 'Farooq Hameed',
                         ),
-                        InstagramStories(
+                        const InstagramStories(
                           height: 80,
                           padding: 3,
                           imagePath: 'assets/images/Zalan_Ahmad.png',
                           name: 'Zalan Ahmad',
                         ),
-                        InstagramStories(
+                        const InstagramStories(
                             height: 80,
                             padding: 3,
                             imagePath: 'assets/images/Shehbaz_Khan.png',
                             name: 'Shehbaz Khan'),
-                        InstagramStories(
+                        const InstagramStories(
                           height: 80,
                           padding: 3,
                           imagePath: 'assets/images/Anas_Hameed.png',
@@ -109,8 +112,8 @@ class Task6 extends StatelessWidget {
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.only(left: 10, right: 10),
-                    child: SizedBox(
+                    margin: const EdgeInsets.only(left: 10, right: 10),
+                    child: const SizedBox(
                       height: 30,
                       child: Divider(),
                     ),
@@ -118,7 +121,7 @@ class Task6 extends StatelessWidget {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Row(
+                      const Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           InstagramProfile(
@@ -129,14 +132,14 @@ class Task6 extends StatelessWidget {
                           ),
                           Padding(
                             padding: EdgeInsets.only(right: 20),
-                            child: Icon(Icons.settings),
+                            child: Icon(Icons.more_horiz_rounded),
                           ),
                         ],
                       ),
                       Container(
-                        constraints: BoxConstraints.tightFor(width: 350),
-                        margin: EdgeInsets.only(
-                            left: 20, right: 20, top: 5, bottom: 10),
+                        constraints: const BoxConstraints.tightFor(width: 350),
+                        margin: const EdgeInsets.only(
+                            left: 20, right: 20, top: 5, bottom: 5),
                         decoration: BoxDecoration(
                           color: Colors.green,
                           borderRadius: BorderRadius.circular(10),
@@ -150,7 +153,7 @@ class Task6 extends StatelessWidget {
                         ),
                       ),
                       Container(
-                        margin: EdgeInsets.all(20),
+                        margin: const EdgeInsets.all(20),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
@@ -158,7 +161,7 @@ class Task6 extends StatelessWidget {
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Container(
-                                  child: Row(
+                                  child: const Row(
                                     children: [
                                       Icon(
                                         FontAwesomeIcons.heart,
@@ -181,20 +184,20 @@ class Task6 extends StatelessWidget {
                                     ],
                                   ),
                                 ),
-                                Icon(
+                                const Icon(
                                   FontAwesomeIcons.bookmark,
                                   size: 30,
                                 ),
                               ],
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 10,
                             ),
-                            Text(
+                            const Text(
                               '2M Likes',
                               style: TextStyle(fontSize: 20),
                             ),
-                            Text(
+                            const Text(
                               '#GhatAkhtar',
                               style: TextStyle(fontSize: 20),
                             ),
