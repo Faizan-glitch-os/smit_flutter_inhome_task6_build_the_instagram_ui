@@ -72,37 +72,37 @@ class Task6 extends StatelessWidget {
                     height: 110,
                     child: ListView(
                       scrollDirection: Axis.horizontal,
-                      children: [
-                        const InstagramStories(
+                      children: const [
+                        InstagramStories(
                           height: 80,
                           padding: 3,
                           imagePath: 'assets/images/Faizan_Ahmad.png',
                           name: 'Faizan Ahmad',
                         ),
-                        const InstagramStories(
+                        InstagramStories(
                           height: 80,
                           padding: 3,
                           imagePath: 'assets/images/Aizaz_Khan1.png',
                           name: 'Aizaz Khan',
                         ),
-                        const InstagramStories(
+                        InstagramStories(
                           height: 80,
                           padding: 3,
                           imagePath: 'assets/images/Farooq_Hameed.png',
                           name: 'Farooq Hameed',
                         ),
-                        const InstagramStories(
+                        InstagramStories(
                           height: 80,
                           padding: 3,
                           imagePath: 'assets/images/Zalan_Ahmad.png',
                           name: 'Zalan Ahmad',
                         ),
-                        const InstagramStories(
+                        InstagramStories(
                             height: 80,
                             padding: 3,
                             imagePath: 'assets/images/Shehbaz_Khan.png',
                             name: 'Shehbaz Khan'),
-                        const InstagramStories(
+                        InstagramStories(
                           height: 80,
                           padding: 3,
                           imagePath: 'assets/images/Anas_Hameed.png',
